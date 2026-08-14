@@ -29,6 +29,65 @@
       alt="New York City View"
     />
 
+    <audio controls>
+      <source src="/media/calm-piano.mp3" type="audio/mpeg" />
+    </audio>
+
+    <video controls width="300px">
+      <source src="/media/hawaii-video.mp4" type="video/mp4" />
+    </video>
+
+    <hr />
+
+    <form action="https://wp.zybooks.com/form-viewer/php" method="GET">
+      <p>
+        <label for="first">First Name:</label>
+        <input type="text" name="first" />
+      </p>
+      <p>
+        <label for="last">Last Name:</label>
+        <input type="text" name="last" />
+      </p>
+      <p>
+        <label for="company">Company Name:</label>
+        <input type="text" name="company" />
+      </p>
+      <p>
+        <label for="email" type="email">Email:</label>
+        <input type="email" name="email" placeholder="example@example.com" />
+      </p>
+      <p>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" placeholder="123-456-7890" />
+      </p>
+      <p>
+        <label for="message">Notes:</label>
+        <textarea name="message" rows="4" cols="50"></textarea>
+      </p>
+      <div>
+        <p>Best time to contact you:</p>
+        <input type="radio" name="time" value="am" />
+        <label for="am">a.m.</label>
+
+        <input type="radio" name="time" value="pm" />
+        <label for="pm">p.m.</label>
+
+        <input type="radio" name="time" value="anytime" />
+        <label for="anytime">Anytime</label>
+      </div>
+
+      <p>
+        <select name="contact">
+          <option value="default">Choose a contact method</option>
+          <option value="phone">Phone</option>
+          <option value="email">Email</option>
+          <option value="text">Text</option>
+        </select>
+      </p>
+
+      <input type="submit" />
+    </form>
+
     <hr />
 
     <footer>
