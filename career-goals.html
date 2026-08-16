@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <h1>Francisco's Career Goals</h1>
-      <nav>
+      <h1 id="center">Francisco's Career Goals</h1>
+      <nav id="center">
         <a href="resume.html">Resume</a>
         <a href="cover-letter.html">Cover Letter</a>
       </nav>
@@ -24,20 +25,36 @@
         long-term goal career goals.
       </p>
       <br />
-      <h3>Short-term Goals</h3>
-      <p>
-        My career goals are pretty straight forward. I currently work in IT but
-        not exactly the position that I want to stay in. I am currently a
-        Service Desk Analyst II, but with the help of this degree, I plan on
-        transitioning into a Software Engineering Role within the same company.
-        I am luckyto work for such a great company. I plan on taking full
-        advantage of the opportunity that I have to be able to network within
-        the organization. I have met a lot of intelligent and talented people
-        that I can learn from and everyone is always so willing to help one
-        another. I consider this a short-term goal because I know that I can
-        accomplish this feat within the next 2 years.
-      </p>
 
+      <h3>Short-term Goals</h3>
+      <div class="parent">
+        <p>
+          My career goals are pretty straight forward. I currently work in IT
+          but not exactly the position that I want to stay in. I am currently a
+          Service Desk Analyst II, but with the help of this degree, I plan on
+          transitioning into a Software Engineering Role within the same
+          company. I am lucky to work for such a great company. I plan on taking
+          full advantage of the opportunity that I have to be able to network
+          within the organization. I have met a lot of intelligent and talented
+          people that I can learn from and everyone is always so willing to help
+          one another. I consider this a short-term goal because I know that I
+          can accomplish this feat within the next 2 years.
+        </p>
+        <div>
+          <img
+            src="/media/new-york.jpg"
+            height="200px"
+            width="300px"
+            alt="New York City View"
+          />
+          <br />
+          <audio controls>
+            <source src="/media/calm-piano.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+
+      <br />
       <h3>Long-term Goals</h3>
       <p>
         I started this Software Engineering journey a few years ago and was
@@ -51,39 +68,35 @@
         mine to contribute to these big companies and their software that are
         used by people all over the globe.
       </p>
+      <br />
       <h3>Conclusion</h3>
-      <p>
-        Career goals are only half of the equation though. With this growth in
-        my career it leads me to what I most value in life, which is my family.
-        I want to be able to provide for my family and give them the best life
-        possible. I want to have a beautiful home with all the animals they
-        would like and a big patch of grass where we can all run around and
-        enjoy the space. I want to be able travel the world with them and create
-        memories that they will never forget. I plan on taking trips to New
-        York, Hawaii, Italy, and many other places. I have my goals lined up to
-        be able to accomplish these things, and I will not stop until it has
-        become a reality.
-      </p>
+      <div class="parent">
+        <p>
+          Career goals are only half of the equation though. With this growth in
+          my career it leads me to what I most value in life, which is my
+          family. I want to be able to provide for my family and give them the
+          best life possible. I want to have a beautiful home with all the
+          animals they would like and a big patch of grass where we can all run
+          around and enjoy the space. I want to be able travel the world with
+          them and create memories that they will never forget. I plan on taking
+          trips to New York, Hawaii, Italy, and many other places. I have my
+          goals lined up to be able to accomplish these things, and I will not
+          stop until it has become a reality.
+        </p>
+        <video controls width="300px">
+          <source src="/media/hawaii-video.mp4" type="video/mp4" />
+        </video>
+      </div>
     </main>
-
-    <img
-      src="/media/new-york.jpg"
-      height="200px"
-      width="300px"
-      alt="New York City View"
-    />
-
-    <audio controls>
-      <source src="/media/calm-piano.mp3" type="audio/mpeg" />
-    </audio>
-
-    <video controls width="300px">
-      <source src="/media/hawaii-video.mp4" type="video/mp4" />
-    </video>
 
     <hr />
 
-    <form action="https://wp.zybooks.com/form-viewer/php" method="GET">
+    <h3 id="center">Let's get in touch!</h3>
+    <form
+      class="form-container"
+      action="https://wp.zybooks.com/form-viewer/php"
+      method="GET"
+    >
       <p>
         <label for="first">First Name:</label>
         <input type="text" name="first" />
@@ -136,7 +149,10 @@
 
     <footer>
       <!-- Use the span below to change the color of 2026 specifically -->
-      <p>&copy; <span>2026</span> My Personal Resume. All Rights Reserved.</p>
+      <p id="center">
+        &copy; <span class="color-secondary">2026</span> My Personal Resume. All
+        Rights Reserved.
+      </p>
     </footer>
   </body>
 </html>

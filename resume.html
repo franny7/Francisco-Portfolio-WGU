@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" />
+
     <title>Resume</title>
   </head>
   <body>
     <header>
-      <h1>Francisco's Resume</h1>
-      <nav>
-        <a href="career-goals.html">Career Goals</a>
-        <a href="cover-letter.html">Cover Letter</a>
+      <h1 id="center">Francisco's Resume</h1>
+      <nav id="center">
+        <a href="career-goals.html" id="navbar">Career Goals</a>
+        <a href="cover-letter.html" id="navbar">Cover Letter</a>
       </nav>
-      <p>
-        Personal Information,full name<br />
-        email<br />
-        github<br />
-        etc.
+      <p id="center">
+        Francisco Martinez Rodriguez<br />
+        fmart111@wgu.edu<br />
+        github.com/franny7
       </p>
 
-      <div>Add current date from JavaScript</div>
+      <div id="center">Add current date from JavaScript</div>
     </header>
 
     <hr />
@@ -27,65 +28,82 @@
     <main>
       <section>
         <h2>Work Experience</h2>
-        <h3>Company Name</h3>
-        <h4>Dates Worked</h4>
-        <p>Job Description and Responsibilities</p>
+        <h3>Target</h3>
+        <h5><em>06/2020 - 08/2026</em></h5>
+        <p>
+          <strong>Sales Associate</strong>: Responsible for assisting customers
+          with their shopping. Ensured customer was satisfied with their trip
+          and found everything they needed. Assisted with ordering extra items
+          if needed.
+        </p>
+
+        <h3>Trader Joes</h3>
+        <h5><em>06/2017 - 06/2020</em></h5>
+        <p>
+          <strong>Cashier/Stock Clerk</strong>: Responsible for assisting
+          customers checking out their items. Ensured to assist customers in a
+          timely manner. Stocked shelfs during downtime to ensure all items were
+          displayed on the floor.
+        </p>
       </section>
+
+      <hr />
 
       <section>
         <h2>School Experience</h2>
-        <h3>School Name</h3>
-        <h4>Dates Attended</h4>
-        <p>Accomplishments</p>
+        <h3>Rancho Verde High School</h3>
+        <h5><em>2009 - 2012</em></h5>
+        <p><strong>3.65 GPA</strong></p>
         <ul>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
+          <li>Baseball All-Conference First Team</li>
+          <li>Graduated with Honors</li>
+          <li>Involved in Student Council</li>
         </ul>
       </section>
 
-      <article>
-        <h3>
-          Add something here that is worth sharing on multiple sites. Something
-          like a famous quote or something.
-        </h3>
-      </article>
+      <hr />
 
-      <table>
-        <thead>
-          <th>1st header</th>
-          <th>2nd header</th>
-          <th>3rd header</th>
-          <th>4th header</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>info</td>
-            <td>info</td>
-            <td>info</td>
-            <td>info</td>
-          </tr>
-          <tr>
-            <td>info</td>
-            <td>info</td>
-            <td>info</td>
-            <td>info</td>
-          </tr>
-          <tr>
-            <td>info</td>
-            <td>info</td>
-            <td>info</td>
-            <td>info</td>
-          </tr>
-        </tbody>
-      </table>
+      <article>
+        <h3>List of Favorites</h3>
+        <table>
+          <thead>
+            <th>Colors</th>
+            <th>Numbers</th>
+            <th>Foods</th>
+            <th>Holidays</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Green</td>
+              <td>Seven</td>
+              <td>Quesadillas</td>
+              <td>Christmas</td>
+            </tr>
+            <tr>
+              <td>Blue</td>
+              <td>Seventy-Seven</td>
+              <td>Chicken Orzo</td>
+              <td>Halloween</td>
+            </tr>
+            <tr>
+              <td>Burgundy</td>
+              <td>Seventeen</td>
+              <td>Cookies</td>
+              <td>Thanksgiving</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
     </main>
 
     <hr />
 
     <footer>
       <!-- Use the span below to change the color of 2026 specifically -->
-      <p>&copy; <span>2026</span> My Personal Resume. All Rights Reserved.</p>
+      <p id="center">
+        &copy; <span class="color-secondary">2026</span> My Personal Resume. All
+        Rights Reserved.
+      </p>
     </footer>
   </body>
 </html>
