@@ -6,6 +6,10 @@
     <link href="/style.css" rel="stylesheet" />
 
     <title>Resume</title>
+    <script>
+      const name = prompt('What is your name?');
+      console.log('Hello ' + name + ', welcome to my resume, hope you enjoy!');
+    </script>
   </head>
   <body>
     <header>
@@ -20,7 +24,11 @@
         github.com/franny7
       </p>
 
-      <div id="center">Add current date from JavaScript</div>
+      <div id="center">
+        <script>
+          document.write(new Date().toString());
+        </script>
+      </div>
     </header>
 
     <hr />
